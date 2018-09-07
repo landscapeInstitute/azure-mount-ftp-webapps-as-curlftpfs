@@ -20,27 +20,27 @@ We wrote this script alongside our Wordpress WP-CLI Python script so you can use
 
 ## Using it
 
-###1)
+### 1)
 Use the following repos to install the Python SDK for Azure
 
 https://github.com/Azure-Samples/app-service-web-python-manage
 https://github.com/Azure/azure-sdk-for-python
 
-###2)
+### 2)
 Clone this repo to somewhere
 
 `sudo git clone https://github.com/landscapeinstitute-bot/azure-mount-ftp-webapps-as-curlftpfs.git`
 
-###3)
+### 3)
 
 Install curlftpfs `sudo apt-get install curlftpfs`
 
-###3)
+### 3)
 
 Create a new app in Azure Directory 
 Use the following for details https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
 
-###4)
+### 4)
 
 now edit the `azure-mount-all-webapps.py` file and enter the following information
 
@@ -52,9 +52,9 @@ tenant = *Your Tenant ID* (https://docs.microsoft.com/en-us/onedrive/find-your-o
 ftp_username = *Your master FTP username set in webapps for ALL your webapps* (this comes before the individual username for each app)
 ftp_password = *Your password for your FTP*
 
-###6) Run `sudo python azure-mount-all-webapps.py`
+### 6) Run `sudo python azure-mount-all-webapps.py`
 
-##Finishing up + Protection
+## Finishing up + Protection
 
 You should now have all your sites mounted in /mnt/ only accessable by root. 
 to protect this script, make it readable only by root 
