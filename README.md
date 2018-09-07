@@ -35,12 +35,12 @@ Clone this repo to somewhere
 
 Install curlftpfs `sudo apt-get install curlftpfs`
 
-### 3)
+### 4)
 
 Create a new app in Azure Directory 
 Use the following for details https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
 
-### 4)
+### 5)
 
 now edit the `azure-mount-all-webapps.py` file and enter the following information
 
