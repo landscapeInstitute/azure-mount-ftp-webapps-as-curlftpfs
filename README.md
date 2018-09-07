@@ -33,6 +33,10 @@ Clone this repo to somewhere
 
 ###3)
 
+Install curlftpfs `sudo apt-get install curlftpfs`
+
+###3)
+
 Create a new app in Azure Directory 
 Use the following for details https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
 
@@ -50,10 +54,12 @@ ftp_password = *Your password for your FTP*
 
 ###6) Run `sudo python azure-mount-all-webapps.py`
 
-##Finishing up
+##Finishing up + Protection
 
 You should now have all your sites mounted in /mnt/ only accessable by root. 
 to protect this script, make it readable only by root 
+
+This script contains clear text copies of important details. You should protect it. 
 
 `
 sudo chown root:root /path/to/script
@@ -61,6 +67,8 @@ sudo chmod 700 /path/to/script
 `
 
 Do not recomend running anything like this as non-root. Use this to then run scripts against your sites. 
+
+If correct, non-root users should have no access to the scripts, or the sites. 
 
 
 
